@@ -17,7 +17,7 @@ export default function Home() {
     }
     try {
       setLoading(true);
-      const res = await fetch('http://localhost:8000/analyze', {
+      const res = await fetch('https://angelic-tenderness-production.up.railway.app/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
